@@ -9,4 +9,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  // Remove these as they're not valid Tailwind options
+  // publicDir: 'public',
+  // assetPrefix: ''
 }
