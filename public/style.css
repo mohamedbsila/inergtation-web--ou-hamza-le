@@ -1,0 +1,258 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.circle-logo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #f5c7c0;
+}
+
+.user-actions {
+    display: flex;
+    gap: 20px;
+}
+
+.user-actions a {
+    color: #333;
+    text-decoration: none;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #E8E6ED;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.product-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.product-card {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.product-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.product-details h3 {
+    font-size: 1rem;
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #FFF5F5;
+    padding: 0.5rem 2rem;
+    border-radius: 25px;
+    width: fit-content;
+}
+
+.quantity-controls button {
+    width: 24px;
+    height: 24px;
+    border: 1.5px solid #FFB5A0;
+    border-radius: 50%;
+    background: none;
+    color: #FFB5A0;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.quantity-controls span {
+    font-size: 1.2rem;
+    color: #333;
+    min-width: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.pagination-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.pagination-numbers {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.page-number {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+}
+
+.page-number::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    opacity: 0.5;
+}
+
+.page-number.active::after {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    opacity: 1;
+}
+
+.nav-arrow {
+    font-size: 2rem;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 1.5rem;
+}
+
+.nav-text button {
+    background-color: #FFE4DB;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 6px;
+    color: #666;
+    cursor: pointer;
+    font-size: 0.9rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+.nav-text button:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+footer {
+    background-color: #f5c7c0;
+    color: #fff;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 22px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
