@@ -1,15 +1,13 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./public/**/*.html",
-    "./public/pages/**/*.html",
-    "./src/**/*.{js,jsx,ts,tsx}"
-  ],
-  theme: {
-    extend: {},
+{
+  "name": "final-integration-web",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/style.css --watch",
+    "build": "npx tailwindcss -i ./src/input.css -o ./public/style.css --minify && cp -r assets public/",
+    "start": "serve public"
   },
-  plugins: [],
-  // Remove these as they're not valid Tailwind options
-  // publicDir: 'public',
-  // assetPrefix: ''
+  "devDependencies": {
+    "tailwindcss": "^3.4.1",
+    "serve": "^14.2.1"
+  }
 }
