@@ -1,3 +1,5 @@
-"scripts": {
-"build": "npx tailwindcss -i ./src/input.css -o ./public/style.css --minify"
+{
+  "scripts": {
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css"
+  }
 }
